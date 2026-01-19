@@ -83,15 +83,16 @@ header p { color: var(--muted); font-size: 0.95rem; }
 
 .list { display: flex; flex-direction: column; background: transparent; border: none; box-shadow: none; padding: 0; }
 .list h2 { 
-  font-size: 0.9rem; 
+  font-size: 0.8rem; 
+  font-weight: 700;
   text-transform: uppercase; 
   letter-spacing: 0.05em; 
   color: var(--muted); 
-  margin-bottom: 16px; 
+  margin-bottom: 20px; 
   padding-left: 4px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .list h2::after { content: ""; height: 1px; flex: 1; background: var(--border); }
