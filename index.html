@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Turnos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <h1>Sistema de Gestión de Turnos</h1>
+    <p>Control simple y eficiente de atención a clientes</p>
+  </header>
+
+  <section class="controls card">
+    <select id="tipoTurno">
+      <option value="normal">Turno Normal</option>
+      <option value="prioritario">Turno Prioritario</option>
+    </select>
+
+    <button class="btn primary" onclick="registrarTurno()">Registrar Turno</button>
+    <button class="btn success" onclick="atenderTurno()">Atender Siguiente</button>
+  </section>
+
+  <section class="list card">
+    <h2>Turnos Pendientes</h2>
+    <ul id="listaTurnos"></ul>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
